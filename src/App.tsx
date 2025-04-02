@@ -1,11 +1,11 @@
-import './App.css'
+import {coursesTitleArray} from "./data/data.ts";
+import {CourseList} from "./components/CourseList.tsx";
+
 
 function App() {
-    return (<>
-        <h1 className="text-3xl font-bold underline">
-            Hello world!
-        </h1>
-    </>)
+	return (
+			<CourseList courses={coursesTitleArray}/>
+	)
 }
 
 export default App
