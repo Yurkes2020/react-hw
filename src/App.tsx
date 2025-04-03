@@ -1,10 +1,9 @@
 import './App.css'
+import {CoursesList} from "./components/coursesList/CoursesList.tsx";
 
 function App() {
     return (<>
-        <h1 className="text-3xl font-bold underline">
-            Hello world!
-        </h1>
+        <CoursesList/>
     </>)
 }
 
