@@ -11,8 +11,9 @@ export const TodoComponents = () => {
 	useEffect(() => {
 
 		const loadUsers = async () => {
-				const data: UserType[] = await fetchUsers();
+				const data:  UserType[]  = await fetchUsers();
 				setUsers(data);
+
 		};
 
 		loadUsers().catch((error) => {

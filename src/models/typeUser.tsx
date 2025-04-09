@@ -1,6 +1,14 @@
+type ReactionsType = {
+	likes: number;
+	dislikes: number;
+}
+
 export type UserType = {
-	userId: number;
 	id: number;
 	title: string;
-	completed: boolean;
+	body: string;
+	tags: string[];
+	reactions:ReactionsType;
+	views: number;
+	userId: number;
 }
