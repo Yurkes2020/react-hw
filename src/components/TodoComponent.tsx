@@ -6,13 +6,13 @@ type UserPropType = {
 
 export const TodoComponent = ({user}: UserPropType) => {
 
-	const [userId, id, title, completed] = Object.keys(user);
+	const [userId, id, title, body] = Object.keys(user);
 	return (
 		<ul>
 			<li>{userId}: {user.userId}  </li>
 			<li>{id}: {user.id} </li>
 			<li>{title}: {user.title} </li>
-			<li>{completed}: {user.completed ? "✅" : "❌"} </li>
+			<li>{body}: {user.body} </li>
 		</ul>
 	)
 }
