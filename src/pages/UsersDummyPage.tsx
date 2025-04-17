@@ -13,7 +13,6 @@ export function UsersDummyPage() {
 
 	return (
 		<div>
-			<h2 className="text-center mb-2 text-2xl">Users (DummyJson)</h2>
 			<ul className="text-center">
 				{users.map((user: UserDummyType) => (
 					<UserDummy user={user} key={user.id}/>

@@ -12,7 +12,6 @@ export function PostsDummyPage() {
 
 	return (
 		<div>
-			<h2 className="text-center mb-2 text-2xl">Posts (PostsDummy)</h2>
 			{posts.map((post: PostDummyType) => (
 				<PostDummy post={post} key={post.id} />
 			))}

@@ -13,7 +13,6 @@ export function CommentsDummyPage() {
 
 	return (
 		<div>
-			<h2 className="text-center mb-2 text-2xl">Comments (CommentsDummy)</h2>
 			{comments.map((comment: CommentDummyType) => (
 				<CommentDummy comment={comment} key={comment.id} />
 			))}

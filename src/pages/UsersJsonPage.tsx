@@ -14,7 +14,6 @@ export const UsersJsonPage = () => {
 
 	return (
 		<div>
-			<h2 className="text-center mb-2 text-2xl">Users (JsonPlaceholder)</h2>
 			<ul className="text-center">
 				{users.map((user: UserJsonType) => (
 					<UserJson user={user} key={user.id}/>

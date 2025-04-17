@@ -12,7 +12,6 @@ export function CommentsJsonPage() {
 
 	return (
 		<div>
-			<h2 className="text-center mb-2 text-2xl">Comments (CommentsJson)</h2>
 			{comments.map((comment: CommentJsonType) => (
 				<CommentJson key={comment.id} comment={comment} />
 			))}

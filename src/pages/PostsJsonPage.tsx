@@ -13,7 +13,6 @@ export function PostsJsonPage() {
 
 	return (
 		<div>
-			<h2 className="text-center mb-2 text-2xl">Posts (JsonPlaceholder)</h2>
 				{posts.map((post: PostJsonType) => (
 						<PostJson key={post.id} post={post} />
 				))}
